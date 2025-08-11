@@ -89,6 +89,7 @@
     #media-session.enable = true;
   };
 
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -119,6 +120,8 @@
      vscode
      docker
      git
+     obsidian
+     bluez
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -139,6 +142,11 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
   services.flatpak.enable = true;
+
+  hardware.graphics = {
+   enable = true;
+   enable32Bit = true;
+  };
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
