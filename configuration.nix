@@ -122,6 +122,7 @@
      git
      obsidian
      bluez
+     google-cloud-sdk
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
