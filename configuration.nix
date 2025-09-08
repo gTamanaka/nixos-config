@@ -106,12 +106,15 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-
+  programs.appimage = {
+	enable = true;
+	binfmt = true;
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+     wget
      neovim
      google-chrome
      discord
@@ -123,6 +126,20 @@
      obsidian
      bluez
      google-cloud-sdk
+     nodejs_24
+     devbox
+     devenv
+     direnv
+     caligula
+     spotify
+     youtube-tui
+     youtube-music
+     filezilla
+     atuin
+     nushell
+     kitty
+     fastfetch
+     fzf
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
