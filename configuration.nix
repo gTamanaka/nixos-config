@@ -141,6 +141,7 @@
      fastfetch
      fzf
      starship
+     distrobox
   ];
 
   programs.starship.enable = true;
