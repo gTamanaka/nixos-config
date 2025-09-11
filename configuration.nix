@@ -158,6 +158,7 @@
   virtualisation.docker = {
     enable = true;
   };
+  virtualisation.waydroid.enable = true;
 
   # List services that you want to enable:
 
