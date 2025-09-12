@@ -142,6 +142,7 @@
      fzf
      starship
      distrobox
+     distroshelf
   ];
 
   programs.starship.enable = true;
