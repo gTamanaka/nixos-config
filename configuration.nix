@@ -144,6 +144,7 @@
      starship
      distrobox
      distroshelf
+     koji
   ];
 
   programs.starship.enable = true;
