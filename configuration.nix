@@ -148,10 +148,17 @@
      netbird-ui
   ];
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.symbols-only
+  ];
+
+
   programs.starship.enable = true;
   services.netbird = {
   	enable = true;
-  }
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
